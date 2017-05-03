@@ -9,6 +9,7 @@ export default class Index extends React.Component {
     }
   }
   render() {
+    const styles = StyleSheet.create(styleObj)
     return (
       <div className={css(styles.root)}>
         <h1 className={css(styles.title)}>My page</h1>
@@ -18,7 +19,7 @@ export default class Index extends React.Component {
 }
 
 
-const styles = StyleSheet.create({
+const styleObj = {
   root: {
     width: 80,
     height: 60,
@@ -27,7 +28,6 @@ const styles = StyleSheet.create({
       background: 'black'
     }
   },
-
   title: {
     marginLeft: 5,
     color: 'black',
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
       color: 'white'
     }
   }
-})
+}
